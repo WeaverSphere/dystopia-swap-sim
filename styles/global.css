@@ -1,0 +1,23 @@
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(128, 128, 128, 0);
+  background: url('/calendar.svg') no-repeat;
+  background-size: contain;
+  opacity: 1;
+  display: block;
+  border-width: thin;
+  position: absolute;
+  top: 20px;
+  left: -103px;
+  z-index: 9;
+}
+
+button {
+  text-transform: none !important;
+}
+
+@media (max-width: 530px) {
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    top: 12px;
+    left: -71px;
+  }
+}
